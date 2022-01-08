@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  width: 300px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  color: hsl(215, 51%, 70%);
+}
+.main-img {
+  margin: 20px auto;
+  position: relative;
+  width: 250px;
+}
+.card-image {
+  height: auto;
+  width: 100%;
+  border-radius: 15px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  border-radius: 15px;
+  background-color: hsl(178, 100%, 50%);
+}
+.main-img:hover .overlay {
+  opacity: 0.8;
+}
+.card-image-hover {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.main-title {
+  width: 250px;
+  margin: 0 auto;
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+}
+.main-title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.description {
+  width: 250px;
+  margin: 16px auto;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+.price {
+  display: flex;
+  width: 250px;
+  margin: 0 auto 30px;
+  justify-content: space-between;
+}
+.price::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 2px;
+  background: grey;
+  width: 250px;
+  bottom: 175px;
+}
+.eth-price {
+  display: flex;
+  color: hsl(178, 100%, 50%);
+}
+.eth-price img {
+  margin-right: 10px;
+}
+.time {
+  display: flex;
+}
+.time img {
+  margin-right: 5px;
+}
+.creator-container {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  margin: 0 auto;
+}
+.creator-container img {
+  margin-right: 15px;
+}
+.creator-container p {
+  font-size: 15px;
+}
+.avatar {
+  height: 30px;
+}
+.name {
+  color: white;
+}
+.name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
