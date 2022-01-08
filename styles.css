@@ -77,18 +77,12 @@
 .price {
   display: flex;
   width: 250px;
-  margin: 0 auto 30px;
+  margin: 0 auto 10px;
   justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
 }
-.price::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  height: 2px;
-  background: grey;
-  width: 250px;
-  bottom: 24%;
-}
+
 .eth-price {
   display: flex;
   color: hsl(178, 100%, 50%);
